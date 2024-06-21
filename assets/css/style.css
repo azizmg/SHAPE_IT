@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* font-size: 1.3rem; */
+    font-weight:400;
+    font-family: var(--primary-font);
+}
+
+/* custom scroll style */
+::-webkit-scrollbar{
+  width:0.625rem;
+}
+::-webkit-scrollbar-track{
+  background-color:var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+  height: 1rem;
+  background-color:var(--secondry-color);
+}
+
+/* variables */
+:root{
+    --primary-color: #A82C48;
+    --secondry-color: #43121d;
+    --third-color: #f98169;
+    --white-color: #fff;
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondry-font: 'Quicksand', sans-serif;
+}
+/* custom style*/
+*:hover,:active,:focus{
+    border: unset!important;
+    
+    text-decoration: none !important;
+    
+}
+html{
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom:2rem;
+  color: var(--secondry-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: var(--secondry-color)!important;
+  line-height: 3rem;
+
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+    background-color:transparent;
+    border: 0.1875rem solid var(--primary-color)!important;
+    color: var(--primary-color);
+  }
+  .white-btn:hover{
+    background-color:transparent;
+    border: 0.1875rem solid var(--primary-color)!important;
+    color: var(--primary-color);
+  }
+/* header section style here */
+.navigation{
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar .logo{
+    width: 100px;
+    height: 100px;
+    
+}
+.navbar .nav-item{
+
+/* border: 1px solid navy; */
+margin:0px 13px!important;
+}
+.navbar .nav-link{
+    color: var(--primary-color)!important;
+    text-transform: capitalize;
+    font-size:0.9375rem;
+    font-weight: 650;
+    letter-spacing: 1px;
+    line-height: 1.3rem ;
+
+}
+.navbar .main-btn{
+    padding:0.4125rem 1.4375rem;
+    box-shadow: none;
+    margin-left:0.625rem;
+    
+  } 
+  
+  /* __top banner */
+  .top-banner{
+    width:100%;
+  background: url('/assets/images/bg/young-fitness-man-studio.jpg') no-repeat center rgb(179, 170, 170);
+  background-size:cover;
+  background-blend-mode:multiply;
+  padding:13.875rem  9.375rem;
+  
+
+  }
+  .top-banner h1{
+    color: var(--white-color);
+  }
+  .top-banner p{
+    color: var(--white-color)!important;
+  }
+
+
+  /* counter section */
+  .counter-section{
+    background-color: var(--primary-color);
+    padding:3rem 8rem;
+    font-size: 1.098rem;
+    font-weight:700 !important;
+  
+  }
+  .counter-section p{
+    color: var(--white-color);
+  }
+  .counter-section h2{
+    color: var(--white-color)!important;
+  }
+
+  /* _____about section   */
+.about-section{
+  padding-top: 8.5rem;
+  padding-bottom: 8.5rem;
+  background-color: var(--white-color);
+}
+  .about-section .card,.card img{
+  border-radius: 0.625rem;
+  }
+  .about-section .text_align{
+  padding-left:3rem;
+ 
+  }
+
+  .work_type{
+    padding-top:2.345rem;
+  }
+  .work_type p{
+    line-height:1.85rem;
+    font-size: 1.05rem;
+  }
+  .work_type ul li{
+    line-height:2.53rem;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .work_type ul li::before{
+    position: absolute;
+    left:0;
+    content:'\f00c';
+    font-weight:bolder;
+    color: var(--primary-color);
+    font-size: 1.35rem;
+  }
+
+
+/* story section */
+.text-content{
+  padding:7rem 3rem;
+  
+}
+.text-content h2{
+color: var(--primary-color)!important;
+
+}
+.text-content p{
+
+font-family: sans-serif;
+
+
+}
+
+/* explore section */
+
+.explore_machinary{
+  padding:8rem 3.5rem;
+}
+.explore_machinary .card-text{
+  color: var(--text-gray);
+}
+.explore_machinary .card .img-fluid {
+ 
+  height:16rem;
+}
+.explore_machinary .card span{
+  display:block;
+ width: 100%;
+  color:var(--primary-color);
+  padding-bottom:1rem;
+  border-bottom:0.0625rem solid #7d7b7b !important;
+}
+.explore_machinary .card span del{
+  color: var(--text-gray);
+}
+/* Reviews Section*/
+.reviews-section{
+  padding:5rem 2rem;
+  background-color: var(--primary-color);
+}
+.reviews-section .carousel-item{
+  margin-top:2rem;
+  padding:10rem 3.125rem;
+  background-color:var(--white-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+
+
+.reviews-section .carousel-caption img{
+  max-width:5rem;
+  border-radius:50%;
+  padding:0.3125rem;
+
+}
+.reviews-section .carousel-item .carousel-caption h2{
+  color: var(--primary-color)!important;
+}
+.reviews-section .carousel-item .carousel-caption p{
+  font-size: 1.25rem;
+ padding:0 5rem;
+  
+}
+.reviews-section .carousel-indicators{
+  bottom:-3rem;
+}
+.reviews-section .carousel-indicators button{
+  width:1rem;
+  height:1rem;
+  border-radius:50%;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+}
+
+/* faq_section */
+.faq_section{
+  padding-top:8rem;
+  padding-bottom:5rem;
+}
+.faq_section .question span{
+  color: var(--primary-color);
+  font-size:1.8rem;
+  font-weight: 800;
+  padding-right:5px;
+}
+/* visit_section */
+.visit_section{
+width:100%;
+background:url('/assets/images/bg/bg-3.jpg') no-repeat center rgb(98, 96, 96);
+background-size: cover;
+background-attachment: fixed;
+background-position:0 71.9125px;
+padding:4.375rem 1rem;
+background-blend-mode:multiply;
+
+}
+.visit_section h2{
+  color: var(--white-color)!important;
+}
+
+
+
+/* contact section */
+.contact{
+  padding: 8rem 1rem;
+}
+.contact input[type=email]{
+border: 3px solid var(--text-gray)!important;
+padding: 0.625rem 1.875rem;
+border-radius: 0%;
+color: var(--text-gray)!important;
+/* font-size: 1.24rem; */
+font-weight: 700;
+
+}
+.contact input[type=email]:active,:focus,:hover{
+outline: unset !important;
+box-shadow: unset !important;
+}
+.contact input[type=email]:hover{
+  border-color: var(--primary-color)!important;
+}
+
+/* footer */
+.footer{
+  padding-top:5rem;
+  padding-bottom:8rem;
+  background-color: var(--primary-color);
+}
+.footer .footer-link{
+  text-decoration: none;
+  color: var(--white-color)!important;
+  padding: 0 2.087rem;
+  font-size: 1.04rem;
+
+}
+
+/* _____________________ */
+
+/* Responsiveness */
+
+@media(max-width:1060px){
+  .top-banner h1{
+    font-size:2.5rem;
+  }
+  .visit_section{
+    padding-left:3rem ;
+    padding-right:3rem ;
+  }
+.visit_section h2{
+  font-size: 2rem;
+  padding:1rem  0;
+}
+}
+@media(max-width:991px){
+
+  .navigation .nav-item{
+   line-height:3.5rem;
+   text-align: center;
+   display: block;
+
+  }
+  .top-banner h1{
+    font-size: 2rem;
+  }
+  /* contact-section */
+  .contact h2{
+font-size:2rem;
+  }
+}
+@media(max-width:769px){
+  .top-banner .text_align{
+    text-align: center;
+  }
+  .about-section h2{
+    text-align:center;
+  }
+  .about-section p{
+    text-align:justify;
+  }
+  .about-section .text_align{
+    text-align:center;
+  }
+  .about-section .list-unstyled{
+    margin-top:3rem;
+    text-align:start;
+  }
+
+  .story_section h2{
+    font-size: 2rem;
+  }
+}
+
+/* explore section */
+@media(max-width:560px){
+  .explore_machinary{
+
+    padding:8rem 2rem;
+  }
+  .explore_machinary h2{
+    font-size: 2rem;
+  }
+}
+
